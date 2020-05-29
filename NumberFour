@@ -10,3 +10,9 @@ x = linspace(-10, 10, 300)
 y = exp((0.2).*x).*cos(x)
 plot(x, y)
 
+
+11)phi = linspace(0, 10*pi, 100)
+   r = 1./phi
+   x = r.*cos(phi)
+   y = r.*sin(phi)
+   plot(x, y)
