@@ -1,0 +1,17 @@
+1)
+x = linspace(0, 0.1, 50) 
+y = log(sin(pi./x))
+plot(x, y)
+   
+  
+2)  
+x = linspace(0, 2*pi, 500)
+y = sin(x)./x
+plot(y.*sin(x), y.*cos(x))
+
+
+3)
+x = linspace(0, 2, 500)
+x1 = x(humps(x) == max(humps(x)))
+x2 = x(humps(x)>=20 & humps(x) <=40)
+plot(x, humps(x), x1, humps(x1), 'o', x2, humps(x2), 'o')
