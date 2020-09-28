@@ -1,18 +1,20 @@
 №13
 1)
-x = linspace(-4, 4, 150)
-y = 1./x - 1./(x-1) + 1./(x-2)
-plot(x, y)
+F = @(x)1./x - 1./(x-1) + 1./(x-2);
+fplot(F, [-4 4]);
+grid on;
 
 
 8)
-x = linspace(-10, 10, 300)
-y = exp((0.2).*x).*cos(x)
-plot(x, y)
+x = linspace(-10, 10, 300);
+y = exp((0.2).*x).*cos(x);
+plot(x, y);
+grid on;
 
 
-11)phi = linspace(0, 10*pi, 100)
-   r = 1./phi
-   x = r.*cos(phi)
-   y = r.*sin(phi)
-   plot(x, y)
+11)phi = linspace(0, 10*pi, 100);
+   r = 1./phi;
+   x = r.*cos(phi);
+   y = r.*sin(phi);
+   plot(x, y);
+   grid on;
