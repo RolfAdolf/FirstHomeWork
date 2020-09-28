@@ -1,30 +1,33 @@
 1)
-x = linspace(-10, 10, 150)
-y = x + 1./(x.^2)
-plot(x, y)
+x = linspace(-10, 10, 150);
+f = @(x) x + 1./(x.^2);
+fplot(f, [-10 10]);
+grid on;
 
 
 
 
 2)
-x = linspace(-10, 10, 150)
-y = (2.*x)./(1+(x.^2))
-plot(x, y)
+F = @(x)(2.*x)./(1+(x.^2));
+fplot(F, [-10 10]);
+grid on;
 
 
 
 7)
-x = linspace(-10, 10, 150)
+ x = linspace(-10, 10, 150);
 y = x.*sin(pi.*x);
-plot(x, y)
+plot(x, y);
+grid on;
 
 
 11)
-t = linspace(-5, 5, 300)
+t = linspace(-5, 5, 300);
 a = 1/2;
 b = 1/3;
 m = 7;
 n=17;
-x = cos(t)+a.*cos(m.*t) + b.*sin(n.*t)
-y = sin(t)+a.*sin(m.*t) + b.*cos(n.*t)
-plot(x, y)
+x = cos(t)+a.*cos(m.*t) + b.*sin(n.*t);
+y = sin(t)+a.*sin(m.*t) + b.*cos(n.*t);
+plot(x, y);
+grid on;
